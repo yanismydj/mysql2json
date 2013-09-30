@@ -17,7 +17,7 @@ Or install it yourself as:
 
 ## Usage
 
-```Mysql2json.get_data(hostname, database_name, username, password)```
+```Mysql2json::Data.get("hostname", "database_name", "username", "password")```
 
 ## Contributing
 
