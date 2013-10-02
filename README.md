@@ -1,5 +1,5 @@
 # Mysql2json
-This is a simple helper script to convert Mysql to json.  If you've got a lot of data it might explode.  I've used it on tables <500MB with no problems.
+This is a simple gem to convert Mysql to json.  If you've got a lot of data it might explode.  I've used it on tables <500MB with no problems.
 
 ## Installation
 
