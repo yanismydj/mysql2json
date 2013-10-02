@@ -1,6 +1,5 @@
 require "mysql2json/version"
 require "mysql2"
-require "json"
 require "ruby-progressbar"
 
 module Mysql2json
@@ -28,10 +27,7 @@ module Mysql2json
         progressbar.increment
       end
 
-      tables = tables.to_s.encode('UTF-8', {invalid: :replace, undef: :replace, replace: '?'})
-      fileout = File.open("output/#{database_name}.json","wb")
-      fileout.write(tables.to_json)
-      fileout.close
+      tables
     end
   end
 end
