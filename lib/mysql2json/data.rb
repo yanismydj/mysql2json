@@ -4,12 +4,13 @@ require "ruby-progressbar"
 
 module Mysql2json
   class Data
-    def self.get(hostname, database_name, username, password = nil)
+    def self.get(hostname, database_name, username, port = 3306, password = nil)
       client = Mysql2::Client.new(
         host:     hostname,
         username: username,
         database: database_name,
-        password: password
+        password: password,
+        port: port
       )
 
       num_tables = 0
